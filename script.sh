@@ -26,8 +26,8 @@ for commit in $commits; do
   # Increment the commit count
   commit_count=$((commit_count + 1))
 
-  # Check if we need to update the date (every 7 days)
+  # Check if we need to update the date (every 7 Commits)
   if (( commit_count % 7 == 0 )); then
-    increment_days=$((increment_days + 7))
+    increment_days=$((increment_days + 1))
   fi
 done
